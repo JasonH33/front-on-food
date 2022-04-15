@@ -1,27 +1,19 @@
-import IconBookmark from "../public/images/icons/icons-bookmark.svg";
-
-import IconCategory from "../public/images/icons/icons-category.svg";
-
-import IconDelivery from "../public/images/icons/icons-delivery.svg";
-
-import IconFilter from "../public/images/icons/icons-filter.svg";
-
-import IconHeart from "../public/images/icons/icons-heart.svg";
-
-import IconHome from "../public/images/icons/icons-home.svg";
-
-import IconRestaurant from "../public/images/icons/icons-restaurant.svg";
-
-import IconReviews from "../public/images/icons/icons-reviews.svg";
-
+import IconBookmark from "../public/images/icons/bookmark.svg";
+import IconHome from "../public/images/icons/home.svg";
+import IconDelivery from "../public/images/icons/delivery.svg";
+import IconCategory from "../public/images/icons/category.svg";
+import IconFilter from "../public/images/icons/filter.svg";
+import IconHeart from "../public/images/icons/heart.svg";
+import IconReviews from "../public/images/icons/reviews.svg";
+import IconRestaurant from "../public/images/icons/restaurant.svg";
 
 export {
   IconBookmark,
-  IconCategory,
+  IconHome,
   IconDelivery,
+  IconCategory,
   IconFilter,
   IconHeart,
-  IconHome,
+  IconReviews,
   IconRestaurant,
-  IconReviews
-}
+};
