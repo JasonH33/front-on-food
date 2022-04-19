@@ -11,7 +11,7 @@ export default function Descobrir(props: PageDiscoveryProps) {
     <PageTemplate>
       <div className={Styles.content}>
         <h1>Opções na região de {city.name}</h1>
-        <p>Encontramos x opções{city.catalogEstimated}</p>
+        <p>Encontramos estas opções: {city.catalogEstimated}</p>
         <div className={Styles.items}>
           <DisheList citySlug={city.slug} />
         </div>
