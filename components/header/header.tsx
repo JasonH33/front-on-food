@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Styles from "./header.module.css";
 import IconBookmark from "../../public/images/icons/bookmark.svg";
+import { IconHome } from "@/icons";
 
 export function Header() {
   return (
@@ -24,7 +25,7 @@ export function Header() {
           <li>
             <Link href="/">
               <a>
-                <IconBookmark />
+                <IconHome />
                 Home
               </a>
             </Link>

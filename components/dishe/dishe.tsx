@@ -17,7 +17,7 @@ export function Dishe(props: DisheType) {
       </div>
       <div>
         <div className={Styles.header}>
-          <h2>(props.name)</h2>
+          <h2>{props.name}</h2>
         </div>
         <div className={Styles.details}>
           <DisheDetails type="reviews" title={props.reviews} subtitle={props.rate} />
