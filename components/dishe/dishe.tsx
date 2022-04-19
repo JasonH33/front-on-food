@@ -1,14 +1,15 @@
+import { DisheType } from "components/types";
 import Image from "next/image";
 import { DisheDetails } from "..";
 import Styles from "./dishe.module.css";
 
-export function Dishe() {
+export function Dishe(props: DisheType) {
   return (
     <div className={Styles.dishe}>
       <div className={Styles.wrapper}>
         <Image
-          src="https://storage.googleapis.com/onfood/peperoni.jpg"
-          alt="Prato"
+          src={props.picture}
+          alt={props.name}
           width={592}
           height={312}
           layout="responsive"
@@ -16,12 +17,12 @@ export function Dishe() {
       </div>
       <div>
         <div className={Styles.header}>
-          <h2>Nome do Produto</h2>
+          <h2>(props.name)</h2>
         </div>
         <div className={Styles.details}>
-          <DisheDetails type="reviews" title="(201)" subtitle="4.5" />
-          <DisheDetails type="category" title="Categoria" />
-          <DisheDetails type="delivery" title="30 - 40 min" />
+          <DisheDetails type="reviews" title={props.reviews} subtitle={props.rate} />
+          <DisheDetails type="category" title={props.category} />
+          <DisheDetails type="delivery" title={props.deliveryEstimated} />
         </div>
       </div>
     </div>
